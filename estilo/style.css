@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: dimgray;
+}
+
+/*cabeçalho*/
+header{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+header > h1{
+    font-family:"Passion One", sans-serif;
+    font-size: calc(5em + 1vw);
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    font-variant: small-caps;
+}
+
+h2{
+    font: normal normal 1em Arial, Helvetica, sans-serif;
+}
+
+header a, footer a{
+    color: white;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+/*corpo*/
+section{
+    font-family: "Sriracha", cursive, arial;
+    font-size: calc(1em + 0.7vw);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.image{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.575);
+    padding-right: 15px;
+}
+section.image#lady{
+    background-image: url('../imagens/background001.jpg');
+}
+section.image#book{
+    background-image: url('../imagens/background002.jpg');
+}
+
+div.fundop{
+    width: calc(100% - 15px);
+    background-color: rgba(0, 0, 0, 0.445);
+    margin-left: -15px;
+    padding: 15px;
+    border-radius: 20px;
+    border: solid 1px rgba(255, 255, 255, 0.507);
+    box-shadow: 0px 5px 15px black;
+    backdrop-filter: blur(10px);
+    
+}
+
+/*rodapé*/
+footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+footer > p{
+    margin: 0px;
+}
